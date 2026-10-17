@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f7fb">
+    <meta name="description" content="Đăng ký tham gia Ngày hội Công nghệ & Đổi mới sáng tạo 2026.">
+    <title>Đăng ký sự kiện | Ngày hội Công nghệ 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="config.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Trang chủ">
+        <span class="brand-mark" aria-hidden="true">E</span>
+        <span>EVENT<span class="brand-dot">.</span>VN</span>
+      </a>
+      <span class="header-note"><span class="live-dot" aria-hidden="true"></span> Cổng đăng ký chính thức</span>
+    </header>
+
+    <main class="page-shell">
+      <section class="event-panel" aria-labelledby="event-name">
+        <div class="event-content">
+          <p class="eyebrow"><span class="eyebrow-line"></span> KẾT NỐI · KHÁM PHÁ · BỨT PHÁ</p>
+          <h1 id="event-name">Ngày hội Công nghệ &amp; Đổi mới sáng tạo 2026</h1>
+          <p class="event-description" id="event-description">Một ngày gặp gỡ những ý tưởng mới, công nghệ tiên phong và cộng đồng sáng tạo đang kiến tạo tương lai.</p>
+
+          <div class="event-details">
+            <div class="detail-item">
+              <span class="detail-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M16 3v4M8 3v4M3 10h18"></path></svg>
+              </span>
+              <span><span class="detail-label">Thời gian</span><strong id="event-date">Thứ Bảy, 14/11/2026</strong></span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>
+              </span>
+              <span><span class="detail-label">Địa điểm</span><strong id="event-location">Innovation Hub, TP. Hồ Chí Minh</strong></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="event-art" aria-hidden="true">
+          <div class="art-orbit orbit-one"></div>
+          <div class="art-orbit orbit-two"></div>
+          <div class="art-glow"></div>
+          <div class="art-card"><span class="art-card-label">FUTURE<br>STARTS HERE</span><span class="art-card-number">26</span></div>
+          <span class="art-spark spark-one">✳</span>
+          <span class="art-spark spark-two">✦</span>
+        </div>
+
+        <div class="capacity-card" aria-live="polite">
+          <span class="capacity-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"></circle><path d="M2.5 20v-1.5a6.5 6.5 0 0 1 13 0V20M16 5a3.5 3.5 0 0 1 0 6.8m1.5 2.1a5.5 5.5 0 0 1 4 5.3V20"></path></svg>
+          </span>
+          <span class="capacity-copy"><strong id="seats-remaining">—</strong><span id="capacity-caption">Số chỗ còn lại</span></span>
+          <a class="capacity-sheet-link" id="capacity-sheet-link" href="https://docs.google.com/spreadsheets/d/1p3PTm0BnIm0HuXLfHYEAAscknXWrowzSCcUpnyNuMfM/edit" target="_blank" rel="noopener noreferrer">Mở Google Sheet ↗</a>
+          <span class="capacity-status" id="capacity-status"></span>
+        </div>
+      </section>
+
+      <section class="registration-card" aria-labelledby="form-title">
+        <div class="form-heading">
+          <span class="form-kicker">THAM GIA CÙNG CHÚNG TÔI</span>
+          <h2 id="form-title">Đăng ký sự kiện</h2>
+          <p>Điền thông tin bên dưới để giữ chỗ tham dự.</p>
+        </div>
+
+        <form id="registration-form" novalidate>
+          <div class="field-group">
+            <label for="full-name">Họ và tên <span class="required-mark" aria-hidden="true">*</span></label>
+            <input id="full-name" name="fullName" type="text" autocomplete="name" maxlength="120" placeholder="Ví dụ: Nguyễn Minh Anh" aria-describedby="full-name-error" required>
+            <span class="field-error" id="full-name-error" aria-live="polite"></span>
+          </div>
+
+          <div class="field-group">
+            <label for="email">Email <span class="required-mark" aria-hidden="true">*</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" maxlength="254" placeholder="ban@example.com" aria-describedby="email-error" required>
+            <span class="field-error" id="email-error" aria-live="polite"></span>
+          </div>
+
+          <div class="field-group">
+            <label for="phone">Số điện thoại <span class="required-mark" aria-hidden="true">*</span></label>
+            <input id="phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" maxlength="10" placeholder="0912345678" aria-describedby="phone-error" required>
+            <span class="field-error" id="phone-error" aria-live="polite"></span>
+          </div>
+
+          <div class="field-group">
+            <label for="note">Ghi chú <span class="optional-label">(không bắt buộc)</span></label>
+            <textarea id="note" name="note" rows="3" maxlength="1000" placeholder="Bạn muốn chia sẻ thêm điều gì với ban tổ chức?" aria-describedby="note-error"></textarea>
+            <span class="field-error" id="note-error" aria-live="polite"></span>
+          </div>
+
+          <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+          <button class="submit-button" id="submit-button" type="submit">
+            <span class="button-spinner" id="button-spinner" aria-hidden="true"></span>
+            <span id="button-label">Đăng ký tham gia</span>
+            <svg class="button-arrow" id="button-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"></path></svg>
+          </button>
+          <p class="privacy-note"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2"></rect><path d="M8 10V7a4 4 0 1 1 8 0v3"></path></svg> Tên và mã đăng ký được gửi QuickChart để tạo mã QR.</p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">© 2026 Event.vn <span aria-hidden="true">·</span> Hẹn gặp bạn tại sự kiện!</footer>
+
+    <dialog class="confirmation-modal" id="confirmation-modal" aria-labelledby="confirmation-title">
+      <div class="modal-content">
+        <button class="modal-close" id="modal-close" type="button" aria-label="Đóng cửa sổ xác nhận">×</button>
+        <div class="success-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m5 12 4.5 4.5L19 7"></path></svg></div>
+        <p class="modal-kicker">ĐÃ GHI NHẬN THÀNH CÔNG</p>
+        <h2 id="confirmation-title">Bạn đã có tên trong danh sách!</h2>
+        <p class="modal-intro">Cảm ơn bạn đã đăng ký. Thông tin xác nhận sẽ được gửi đến email của bạn.</p>
+        <div class="confirmation-details">
+          <div><span>Người tham dự</span><strong id="confirmed-name"></strong></div>
+          <div><span>Mã đăng ký</span><strong class="registration-code" id="registration-code"></strong></div>
+          <div><span>Sự kiện</span><strong id="confirmed-event"></strong></div>
+        </div>
+        <div class="qr-section">
+          <div class="qr-image-wrap" id="qr-image-wrap">
+            <img id="qr-image" alt="Mã QR chứa họ tên và mã đăng ký để xuất trình khi check-in" hidden>
+            <span id="qr-placeholder" class="qr-placeholder" aria-live="polite">Đang tạo mã QR…</span>
+          </div>
+          <div class="qr-copy"><strong>Mã QR check-in</strong><p>Lưu lại mã này và xuất trình tại sự kiện.</p></div>
+        </div>
+        <p class="email-notice" id="email-notice" role="status" aria-live="polite"></p>
+        <button class="modal-done" id="modal-done" type="button">Hoàn tất</button>
+      </div>
+    </dialog>
+  </body>
+</html>
